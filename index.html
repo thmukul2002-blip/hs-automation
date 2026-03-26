@@ -13,10 +13,6 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       background: #0b1220;
       color: #fff;
@@ -48,29 +44,12 @@
       justify-content: space-between;
       align-items: center;
       padding: 16px 0;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .brand img {
-      width: 58px;
-      height: 58px;
-      object-fit: contain;
-      border-radius: 12px;
-      background: #111a2c;
-      padding: 4px;
-      border: 1px solid rgba(255,255,255,0.08);
     }
 
     .logo {
       font-size: 28px;
       font-weight: bold;
-      color: #d4af37;
+      color: #22d3ee;
       letter-spacing: 1px;
     }
 
@@ -90,22 +69,22 @@
     }
 
     .hero {
-      min-height: 88vh;
+      min-height: 90vh;
       display: flex;
       align-items: center;
       background:
-        linear-gradient(rgba(8,12,25,0.84), rgba(8,12,25,0.92)),
+        linear-gradient(rgba(8,12,25,0.82), rgba(8,12,25,0.92)),
         url('https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
     }
 
     .hero-content {
-      max-width: 760px;
-      padding: 80px 0;
+      max-width: 700px;
+      padding: 70px 0;
     }
 
     .hero h1 {
       font-size: 52px;
-      line-height: 1.12;
+      line-height: 1.15;
       margin-bottom: 18px;
     }
 
@@ -149,16 +128,6 @@
       color: #08111f;
     }
 
-    .btn-gold {
-      background: #d4af37;
-      color: #08111f;
-    }
-
-    .btn-gold:hover {
-      background: #ebcb64;
-      transform: translateY(-2px);
-    }
-
     section {
       padding: 80px 0;
     }
@@ -173,14 +142,13 @@
     .section-subtitle {
       text-align: center;
       color: #cbd5e1;
-      max-width: 780px;
+      max-width: 750px;
       margin: 0 auto 40px;
     }
 
     .about-grid,
     .services-grid,
     .product-grid,
-    .gallery-grid,
     .contact-grid {
       display: grid;
       gap: 24px;
@@ -206,8 +174,7 @@
     }
 
     .about-img img,
-    .product-card img,
-    .gallery-card img {
+    .product-card img {
       width: 100%;
       border-radius: 14px;
       display: block;
@@ -260,10 +227,6 @@
       font-size: 15px;
     }
 
-    .split-section {
-      background: linear-gradient(135deg, #0d1728, #111a2c);
-    }
-
     .product-grid {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -271,9 +234,6 @@
     .product-card {
       overflow: hidden;
       padding: 0;
-      background: #111a2c;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px;
     }
 
     .product-card .content {
@@ -288,29 +248,6 @@
     .product-card p {
       font-size: 14px;
       color: #cbd5e1;
-    }
-
-    .gallery-grid {
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    }
-
-    .gallery-card {
-      background: #111a2c;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-
-    .gallery-card img {
-      height: 250px;
-    }
-
-    .gallery-card .caption {
-      padding: 16px;
-      color: #d1d5db;
-      font-size: 14px;
-      text-align: center;
     }
 
     .why-us {
@@ -343,81 +280,6 @@
     .contact-info p {
       margin-bottom: 12px;
       color: #d1d5db;
-    }
-
-    .contact-info a {
-      color: #22d3ee;
-    }
-
-    .contact-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .contact-info-pro {
-      margin-top: 24px;
-    }
-
-    .contact-note {
-      color: #cbd5e1;
-      margin-bottom: 18px;
-      font-size: 15px;
-    }
-
-    .contact-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-    }
-
-    .contact-card {
-      background: #0d1728;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px;
-      padding: 16px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-align: left;
-      transition: 0.3s ease;
-    }
-
-    .contact-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(212,175,55,0.45);
-    }
-
-    .icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 22px;
-    }
-
-    .call-icon {
-      background: #1d4ed8;
-    }
-
-    .whatsapp-icon {
-      background: #25D366;
-    }
-
-    .contact-text h4 {
-      font-size: 17px;
-      margin-bottom: 4px;
-      color: #fff;
-    }
-
-    .contact-text p {
-      color: #d1d5db;
-      font-size: 14px;
-      margin: 0;
     }
 
     form input,
@@ -484,19 +346,6 @@
       .section-title {
         font-size: 30px;
       }
-
-      .brand img {
-        width: 46px;
-        height: 46px;
-      }
-
-      .logo {
-        font-size: 22px;
-      }
-
-      .gallery-card img {
-        height: 220px;
-      }
     }
   </style>
 </head>
@@ -505,17 +354,12 @@
   <header>
     <div class="container">
       <nav>
-        <div class="brand">
-          <img src="4F9B00D1-0444-4FA5-A170-745E3962EBAF.png" alt="HS Automation Logo">
-          <div class="logo">HS <span>Automation</span></div>
-        </div>
-
+        <div class="logo">HS <span>Automation</span></div>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#semiconductors">Semiconductors</a></li>
-          <li><a href="#automation">Automation</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -532,8 +376,7 @@
         </p>
         <div class="btn-group">
           <a href="#contact" class="btn btn-primary">Send Inquiry</a>
-          <a href="https://wa.me/918796031153" class="btn btn-secondary" target="_blank">WhatsApp 1</a>
-          <a href="https://wa.me/918796021153" class="btn btn-gold" target="_blank">WhatsApp 2</a>
+          <a href="https://wa.me/918368896540" class="btn btn-secondary" target="_blank">WhatsApp Now</a>
         </div>
       </div>
     </div>
@@ -609,138 +452,72 @@
     </div>
   </section>
 
-  <section id="semiconductors" class="split-section">
+  <section id="products">
     <div class="container">
-      <h2 class="section-title">Semiconductor Products</h2>
+      <h2 class="section-title">Featured Products</h2>
       <p class="section-subtitle">
-        Dedicated section for semiconductor components, stock images and electronics product visuals.
+        A professional product showcase for semiconductor and automation categories.
       </p>
 
       <div class="product-grid">
-        <div class="product-card">
-          <img src="22fd00cd-20bc-444d-81c5-417d9dd88b49.jpeg" alt="Semiconductor Product 1">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Semiconductor Components">
           <div class="content">
-            <h3>Transistors & Components</h3>
-            <p>Professional supply of core semiconductor components for commercial and industrial requirements.</p>
+            <h3>Semiconductor Components</h3>
+            <p>High-demand electronics parts for industrial and commercial needs.</p>
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="0D2F7500-C885-4ACF-9617-A94FE53268B7.png" alt="Semiconductor Product 2">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1200&q=80" alt="Industrial Automation">
           <div class="content">
-            <h3>MOSFET & Power Devices</h3>
-            <p>High-demand parts suitable for bulk inquiries and regular supply needs.</p>
+            <h3>Automation Equipment</h3>
+            <p>Reliable solutions for control systems, machine support and factory applications.</p>
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="332CF1A0-9408-4A94-8E1E-DFF08FF78475.png" alt="Semiconductor Product 3">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80" alt="Electrical Panel Parts">
           <div class="content">
-            <h3>Relays, ICs & More</h3>
-            <p>Trusted product categories for electronics traders, buyers and resellers.</p>
+            <h3>Panels, Wires & Drives</h3>
+            <p>Complete industrial support products for electrical and automation use cases.</p>
           </div>
         </div>
 
-        <div class="product-card">
-          <img src="3F1DFE06-17D0-4F90-B521-A5E58CE26177.png" alt="Semiconductor Product 4">
+        <div class="card product-card">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Industrial Inquiry">
           <div class="content">
-            <h3>Capacitors & Support Parts</h3>
-            <p>Quality product range for various industrial and electronic applications.</p>
+            <h3>B2B Order Inquiry</h3>
+            <p>Quick response for bulk requirements, repeat orders and client-specific supply needs.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="automation">
+  <section class="why-us">
     <div class="container">
-      <h2 class="section-title">Automation Products</h2>
+      <h2 class="section-title">Why Choose Us</h2>
       <p class="section-subtitle">
-        Separate space for automation-related parts, panels, drives, industrial accessories and machine support products.
+        HS Automation is built for professional dealing, affordable pricing and dependable customer support.
       </p>
 
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="440f7c4f-9201-42aa-a962-abe601d71e42.jpeg" alt="Automation Product 1">
-          <div class="content">
-            <h3>Automation Control Parts</h3>
-            <p>Reliable products for control systems, automation support and industrial use.</p>
-          </div>
+      <div class="why-list">
+        <div class="why-item">
+          <h4>Affordable Rates</h4>
+          <p>Competitive prices across multiple brands and categories.</p>
         </div>
-
-        <div class="product-card">
-          <img src="5F0682D4-B513-4C5F-B636-DB009E9FED3B.png" alt="Automation Product 2">
-          <div class="content">
-            <h3>Panels, Wires & Accessories</h3>
-            <p>Industrial support solutions for machine applications and automation systems.</p>
-          </div>
+        <div class="why-item">
+          <h4>Professional Support</h4>
+          <p>Fast communication for client handling, quotation support and order discussion.</p>
         </div>
-
-        <div class="product-card">
-          <img src="7b62893f-e07c-464e-be1a-cf2036ceb51b.jpeg" alt="Automation Product 3">
-          <div class="content">
-            <h3>Machinery Support Items</h3>
-            <p>Fast-moving products for workshops, factories and B2B buyers.</p>
-          </div>
+        <div class="why-item">
+          <h4>Product Knowledge</h4>
+          <p>Focused on technical understanding of semiconductor and automation products.</p>
         </div>
-
-        <div class="product-card">
-          <img src="095D77E6-BCAA-4016-9606-588ED864359B.png" alt="Automation Product 4">
-          <div class="content">
-            <h3>Industrial Solutions</h3>
-            <p>Professional automation solutions backed by responsive business support.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="why-us">
-    <div class="container">
-      <h2 class="section-title">Product Image Gallery</h2>
-      <p class="section-subtitle">
-        Uploaded photos, posters and product visuals displayed in a separate clean gallery layout.
-      </p>
-
-      <div class="gallery-grid">
-        <div class="gallery-card">
-          <img src="22fd00cd-20bc-444d-81c5-417d9dd88b49.jpeg" alt="Gallery 1">
-          <div class="caption">Semiconductor product image</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="0D2F7500-C885-4ACF-9617-A94FE53268B7.png" alt="Gallery 2">
-          <div class="caption">MOSFET and related product poster</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="332CF1A0-9408-4A94-8E1E-DFF08FF78475.png" alt="Gallery 3">
-          <div class="caption">Component display banner</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="3F1DFE06-17D0-4F90-B521-A5E58CE26177.png" alt="Gallery 4">
-          <div class="caption">Electronics component poster</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="440f7c4f-9201-42aa-a962-abe601d71e42.jpeg" alt="Gallery 5">
-          <div class="caption">Automation or stock visual</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="5F0682D4-B513-4C5F-B636-DB009E9FED3B.png" alt="Gallery 6">
-          <div class="caption">Industrial product banner</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="7b62893f-e07c-464e-be1a-cf2036ceb51b.jpeg" alt="Gallery 7">
-          <div class="caption">Stock image / product visual</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="4F9B00D1-0444-4FA5-A170-745E3962EBAF.png" alt="Gallery 8">
-          <div class="caption">HS Automation premium logo</div>
+        <div class="why-item">
+          <h4>B2B Friendly</h4>
+          <p>Suitable for traders, resellers, industrial buyers and business inquiries.</p>
         </div>
       </div>
     </div>
@@ -758,62 +535,11 @@
           <h3>Business Details</h3>
           <p><strong>Company:</strong> HS Automation</p>
           <p><strong>Director:</strong> Abhishek</p>
-          <p><strong>Email:</strong> <a href="mailto:hsautomation6690@gmail.com">hsautomation6690@gmail.com</a></p>
+          <p><strong>Phone:</strong> +91 83688 96540</p>
+          <p><strong>Email:</strong> hsautomation6690@gmail.com</p>
           <p><strong>GST No.:</strong> 09OXMPS5054R1ZZ</p>
           <p><strong>Working Hours:</strong> 10:00 AM to 7:00 PM</p>
-          <p><strong>Location:</strong> Noida Sector-3, Block F-2, nearest metro Noida Sector 16</p>
-
-          <div class="contact-buttons">
-            <a href="https://maps.app.goo.gl/d7g76npQkQQAn91ZA" target="_blank" class="btn btn-gold">View Location</a>
-          </div>
-
-          <div class="contact-info-pro">
-            <p class="contact-note">Both numbers are available for Call & WhatsApp.</p>
-
-            <div class="contact-cards">
-              <a class="contact-card" href="tel:+918796031153">
-                <div class="icon call-icon">📞</div>
-                <div class="contact-text">
-                  <h4>Call / WhatsApp</h4>
-                  <p>+91 8796031153</p>
-                </div>
-              </a>
-
-              <a class="contact-card" href="https://wa.me/918796031153" target="_blank">
-                <div class="icon whatsapp-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="white">
-                    <path d="M19.11 17.23c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.15.18-.31.2-.58.07-.27-.14-1.13-.42-2.15-1.34-.8-.71-1.34-1.58-1.49-1.85-.15-.27-.02-.41.11-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.95 2.58 1.09 2.76c.13.18 1.87 2.85 4.53 4 .63.27 1.13.43 1.52.55.64.2 1.22.17 1.68.1.51-.08 1.58-.64 1.8-1.25.22-.61.22-1.13.15-1.25-.07-.11-.24-.18-.51-.32z"/>
-                    <path d="M16.02 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.25.59 4.45 1.7 6.39L3 29l6.79-1.78a12.76 12.76 0 0 0 6.23 1.59h.01c7.07 0 12.8-5.73 12.8-12.8S23.09 3.2 16.02 3.2zm0 23.44h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.03 1.06 1.08-3.93-.25-.4a10.58 10.58 0 1 1 8.99 4.98z"/>
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <h4>WhatsApp Chat</h4>
-                  <p>+91 8796031153</p>
-                </div>
-              </a>
-
-              <a class="contact-card" href="tel:+918796021153">
-                <div class="icon call-icon">📞</div>
-                <div class="contact-text">
-                  <h4>Call / WhatsApp</h4>
-                  <p>+91 8796021153</p>
-                </div>
-              </a>
-
-              <a class="contact-card" href="https://wa.me/918796021153" target="_blank">
-                <div class="icon whatsapp-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="white">
-                    <path d="M19.11 17.23c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.15.18-.31.2-.58.07-.27-.14-1.13-.42-2.15-1.34-.8-.71-1.34-1.58-1.49-1.85-.15-.27-.02-.41.11-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.47h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.95 2.58 1.09 2.76c.13.18 1.87 2.85 4.53 4 .63.27 1.13.43 1.52.55.64.2 1.22.17 1.68.1.51-.08 1.58-.64 1.8-1.25.22-.61.22-1.13.15-1.25-.07-.11-.24-.18-.51-.32z"/>
-                    <path d="M16.02 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.25.59 4.45 1.7 6.39L3 29l6.79-1.78a12.76 12.76 0 0 0 6.23 1.59h.01c7.07 0 12.8-5.73 12.8-12.8S23.09 3.2 16.02 3.2zm0 23.44h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.03 1.06 1.08-3.93-.25-.4a10.58 10.58 0 1 1 8.99 4.98z"/>
-                  </svg>
-                </div>
-                <div class="contact-text">
-                  <h4>WhatsApp Chat</h4>
-                  <p>+91 8796021153</p>
-                </div>
-              </a>
-            </div>
-          </div>
+          <p><strong>Location:</strong> Sector 16, nearest metro station Sector 3, F Block</p>
         </div>
 
         <div class="card">
@@ -837,7 +563,8 @@
     </div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/918796031153" target="_blank">WhatsApp</a>
+  <a class="whatsapp-float" href="https://wa.me/918368896540" target="_blank">WhatsApp</a>
 
 </body>
 </html>
+
