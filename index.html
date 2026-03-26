@@ -3,348 +3,493 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HS Automation | Semiconductor & Automation Products</title>
-  <meta name="description" content="HS Automation deals in semiconductor electronics components, automation products, drives, wires, panels and industrial solutions at affordable prices." />
+  <title>HS Automation | Semiconductor & Automation Supplier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
     }
 
-    body {
-      background: #0b1220;
-      color: #fff;
-      line-height: 1.6;
+    html{
+      scroll-behavior:smooth;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    body{
+      background:linear-gradient(180deg,#061120 0%,#0a1730 45%,#07101d 100%);
+      color:#fff;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: auto;
+    a{
+      text-decoration:none;
+      color:inherit;
     }
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(8, 13, 24, 0.95);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
+    img{
+      max-width:100%;
+      display:block;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
+    .container{
+      width:min(1180px,92%);
+      margin:auto;
     }
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #22d3ee;
-      letter-spacing: 1px;
+    header{
+      position:sticky;
+      top:0;
+      z-index:999;
+      background:rgba(4,10,20,0.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(212,175,55,0.18);
     }
 
-    .logo span {
-      color: #fff;
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 0;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      list-style: none;
-      font-size: 15px;
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:28px;
+      font-weight:700;
+      color:#d4af37;
     }
 
-    .nav-links a:hover {
-      color: #22d3ee;
+    .logo span{
+      color:#fff;
+      font-weight:600;
+      font-size:22px;
     }
 
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      align-items: center;
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:26px;
+      align-items:center;
+    }
+
+    nav ul li a{
+      color:#e8edf7;
+      font-size:15px;
+      transition:.3s;
+    }
+
+    nav ul li a:hover{
+      color:#d4af37;
+    }
+
+    .btn-nav{
+      padding:10px 18px;
+      border:1px solid #d4af37;
+      color:#d4af37;
+      border-radius:10px;
+    }
+
+    .hero{
+      padding:70px 0 40px;
+    }
+
+    .hero-box{
+      display:grid;
+      grid-template-columns:1.15fr .95fr;
+      gap:28px;
+      align-items:center;
       background:
-        linear-gradient(rgba(8,12,25,0.82), rgba(8,12,25,0.92)),
-        url('https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+        linear-gradient(rgba(5,13,24,0.82),rgba(5,13,24,0.9)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      border:1px solid rgba(212,175,55,0.2);
+      border-radius:26px;
+      overflow:hidden;
+      box-shadow:0 18px 60px rgba(0,0,0,0.35);
+      min-height:520px;
     }
 
-    .hero-content {
-      max-width: 700px;
-      padding: 70px 0;
+    .hero-content{
+      padding:48px;
     }
 
-    .hero h1 {
-      font-size: 52px;
-      line-height: 1.15;
-      margin-bottom: 18px;
+    .hero-tag{
+      display:inline-block;
+      color:#d4af37;
+      background:rgba(212,175,55,0.12);
+      border:1px solid rgba(212,175,55,0.22);
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      margin-bottom:18px;
     }
 
-    .hero p {
-      font-size: 18px;
-      color: #d1d5db;
-      margin-bottom: 28px;
+    .hero h1{
+      font-size:50px;
+      line-height:1.12;
+      margin-bottom:16px;
     }
 
-    .btn-group {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
+    .hero p{
+      color:#d8deea;
+      font-size:17px;
+      line-height:1.8;
+      max-width:640px;
+      margin-bottom:28px;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 14px 24px;
-      border-radius: 10px;
-      font-weight: bold;
-      transition: 0.3s ease;
+    .hero-btns{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
     }
 
-    .btn-primary {
-      background: #22d3ee;
-      color: #08111f;
+    .btn-primary,
+    .btn-secondary{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 24px;
+      border-radius:12px;
+      font-weight:600;
+      transition:.3s;
     }
 
-    .btn-primary:hover {
-      background: #67e8f9;
-      transform: translateY(-2px);
+    .btn-primary{
+      background:linear-gradient(135deg,#d4af37,#f2d57a);
+      color:#111;
+      box-shadow:0 8px 24px rgba(212,175,55,0.28);
     }
 
-    .btn-secondary {
-      border: 1px solid #22d3ee;
-      color: #22d3ee;
+    .btn-primary:hover{
+      transform:translateY(-2px);
     }
 
-    .btn-secondary:hover {
-      background: #22d3ee;
-      color: #08111f;
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,0.22);
+      color:#fff;
+      background:rgba(255,255,255,0.05);
     }
 
-    section {
-      padding: 80px 0;
+    .hero-side{
+      padding:22px;
     }
 
-    .section-title {
-      text-align: center;
-      font-size: 36px;
-      margin-bottom: 14px;
-      color: #22d3ee;
+    .hero-card{
+      background:linear-gradient(180deg,rgba(14,28,51,0.82),rgba(7,14,26,0.92));
+      border:1px solid rgba(212,175,55,0.18);
+      border-radius:22px;
+      overflow:hidden;
+      box-shadow:0 18px 50px rgba(0,0,0,0.28);
     }
 
-    .section-subtitle {
-      text-align: center;
-      color: #cbd5e1;
-      max-width: 750px;
-      margin: 0 auto 40px;
+    .hero-card img{
+      width:100%;
+      height:280px;
+      object-fit:cover;
     }
 
-    .about-grid,
-    .services-grid,
-    .product-grid,
-    .contact-grid {
-      display: grid;
-      gap: 24px;
+    .hero-card-content{
+      padding:24px;
     }
 
-    .about-grid {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      align-items: center;
+    .hero-card-content h3{
+      color:#d4af37;
+      margin-bottom:8px;
+      font-size:24px;
     }
 
-    .card {
-      background: #111a2c;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 16px;
-      padding: 24px;
-      transition: 0.3s ease;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    .hero-card-content p{
+      color:#d8deea;
+      line-height:1.8;
+      font-size:15px;
     }
 
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(34, 211, 238, 0.45);
+    section{
+      padding:70px 0;
     }
 
-    .about-img img,
-    .product-card img {
-      width: 100%;
-      border-radius: 14px;
-      display: block;
-      object-fit: cover;
+    .section-title{
+      text-align:center;
+      margin-bottom:14px;
+      color:#d4af37;
+      font-size:15px;
+      letter-spacing:2px;
+      text-transform:uppercase;
     }
 
-    .about-text h3 {
-      font-size: 28px;
-      margin-bottom: 12px;
+    .section-heading{
+      text-align:center;
+      font-size:38px;
+      margin-bottom:14px;
     }
 
-    .about-text p {
-      color: #d1d5db;
-      margin-bottom: 12px;
+    .section-text{
+      text-align:center;
+      color:#cfd8e6;
+      max-width:760px;
+      margin:0 auto 42px;
+      line-height:1.8;
     }
 
-    .stats {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      margin-top: 20px;
+    .about-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
     }
 
-    .stat-box {
-      flex: 1;
-      min-width: 140px;
-      background: #0d1728;
-      padding: 16px;
-      border-radius: 12px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.06);
+    .info-card{
+      background:linear-gradient(180deg,rgba(13,24,45,0.9),rgba(8,15,29,0.92));
+      border:1px solid rgba(212,175,55,0.14);
+      border-radius:18px;
+      padding:26px;
+      box-shadow:0 12px 34px rgba(0,0,0,0.22);
     }
 
-    .stat-box h4 {
-      font-size: 24px;
-      color: #22d3ee;
+    .info-card h3{
+      color:#d4af37;
+      margin-bottom:12px;
+      font-size:22px;
     }
 
-    .services-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .info-card p{
+      color:#d9e0ea;
+      line-height:1.8;
+      font-size:15px;
     }
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #fff;
+    .products-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
     }
 
-    .card p {
-      color: #cbd5e1;
-      font-size: 15px;
+    .product-card{
+      background:linear-gradient(180deg,rgba(12,23,42,0.92),rgba(7,14,26,0.96));
+      border:1px solid rgba(212,175,55,0.15);
+      border-radius:20px;
+      overflow:hidden;
+      transition:.35s;
+      box-shadow:0 14px 40px rgba(0,0,0,0.22);
     }
 
-    .product-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .product-card:hover{
+      transform:translateY(-8px);
+      border-color:rgba(212,175,55,0.36);
     }
 
-    .product-card {
-      overflow: hidden;
-      padding: 0;
+    .product-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
     }
 
-    .product-card .content {
-      padding: 20px;
+    .product-content{
+      padding:22px;
     }
 
-    .product-card h3 {
-      margin-bottom: 8px;
-      font-size: 20px;
+    .product-content h3{
+      color:#d4af37;
+      font-size:24px;
+      margin-bottom:10px;
     }
 
-    .product-card p {
-      font-size: 14px;
-      color: #cbd5e1;
+    .product-content p{
+      color:#d5dce8;
+      line-height:1.8;
+      font-size:15px;
     }
 
-    .why-us {
-      background: linear-gradient(135deg, #0d1728, #111a2c);
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
     }
 
-    .why-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
-      margin-top: 30px;
+    .gallery-item{
+      background:linear-gradient(180deg,rgba(13,24,45,0.9),rgba(7,14,26,0.95));
+      border:1px solid rgba(212,175,55,0.14);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 28px rgba(0,0,0,0.2);
     }
 
-    .why-item {
-      background: #0b1220;
-      padding: 22px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.07);
+    .gallery-item img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
     }
 
-    .why-item h4 {
-      margin-bottom: 10px;
-      color: #22d3ee;
+    .gallery-item p{
+      padding:14px;
+      color:#e8edf7;
+      text-align:center;
+      font-size:14px;
     }
 
-    .contact-grid {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .replace-note{
+      margin-top:20px;
+      background:rgba(212,175,55,0.08);
+      border:1px dashed rgba(212,175,55,0.35);
+      color:#f6e3a2;
+      padding:16px 18px;
+      border-radius:14px;
+      line-height:1.8;
+      font-size:14px;
     }
 
-    .contact-info p {
-      margin-bottom: 12px;
-      color: #d1d5db;
+    .contact-wrap{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+    }
+
+    .contact-card,
+    .details-card{
+      background:linear-gradient(180deg,rgba(13,24,45,0.92),rgba(7,14,26,0.96));
+      border:1px solid rgba(212,175,55,0.15);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 16px 42px rgba(0,0,0,0.24);
+    }
+
+    .contact-card h3,
+    .details-card h3{
+      color:#d4af37;
+      font-size:28px;
+      margin-bottom:18px;
+    }
+
+    .contact-card p,
+    .details-card p{
+      color:#d7deea;
+      line-height:1.9;
+      margin-bottom:10px;
     }
 
     form input,
-    form textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 14px;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 10px;
-      background: #0d1728;
-      color: #fff;
-      outline: none;
+    form textarea,
+    form select{
+      width:100%;
+      background:#081322;
+      border:1px solid rgba(255,255,255,0.12);
+      color:#fff;
+      border-radius:12px;
+      padding:14px 15px;
+      margin-bottom:14px;
+      outline:none;
+      font-size:15px;
     }
 
-    form textarea {
-      resize: vertical;
-      min-height: 130px;
+    form textarea{
+      min-height:130px;
+      resize:vertical;
     }
 
-    form button {
-      border: none;
-      cursor: pointer;
-      width: 100%;
+    form button{
+      width:100%;
+      border:none;
+      padding:15px;
+      border-radius:12px;
+      font-size:16px;
+      font-weight:700;
+      background:linear-gradient(135deg,#d4af37,#f2d57a);
+      color:#111;
+      cursor:pointer;
     }
 
-    footer {
-      background: #070d18;
-      text-align: center;
-      padding: 24px 0;
-      color: #94a3b8;
-      border-top: 1px solid rgba(255,255,255,0.06);
+    .contact-list{
+      margin-top:10px;
     }
 
-    .whatsapp-float {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      background: #25D366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 50px;
-      font-weight: bold;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      z-index: 999;
+    .contact-list div{
+      padding:12px 0;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      color:#eaf0f8;
+      font-size:15px;
     }
 
-    .whatsapp-float:hover {
-      transform: translateY(-2px);
+    .footer{
+      border-top:1px solid rgba(212,175,55,0.16);
+      padding:22px 0 28px;
+      text-align:center;
+      color:#c8d2e0;
+      background:#050b14;
     }
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 36px;
+    .float-btn{
+      position:fixed;
+      right:18px;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      color:#fff;
+      box-shadow:0 10px 28px rgba(0,0,0,0.28);
+      z-index:999;
+    }
+
+    .whatsapp{
+      bottom:92px;
+      background:#25d366;
+    }
+
+    .call{
+      bottom:22px;
+      background:#0ea5e9;
+    }
+
+    @media (max-width: 992px){
+      .hero-box,
+      .contact-wrap,
+      .about-grid,
+      .products-grid,
+      .gallery-grid{
+        grid-template-columns:1fr 1fr;
       }
 
-      .nav-links {
-        display: none;
+      .hero h1{
+        font-size:40px;
+      }
+    }
+
+    @media (max-width: 768px){
+      .nav{
+        flex-direction:column;
+        gap:16px;
       }
 
-      .hero p {
-        font-size: 16px;
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:14px;
       }
 
-      .section-title {
-        font-size: 30px;
+      .hero-box,
+      .contact-wrap,
+      .about-grid,
+      .products-grid,
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero-content{
+        padding:28px;
+      }
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .section-heading{
+        font-size:30px;
       }
     }
   </style>
@@ -352,15 +497,15 @@
 <body>
 
   <header>
-    <div class="container">
+    <div class="container nav">
+      <div class="logo">HS <span>Automation</span></div>
       <nav>
-        <div class="logo">HS <span>Automation</span></div>
-        <ul class="nav-links">
+        <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact" class="btn-nav">Send Enquiry</a></li>
         </ul>
       </nav>
     </div>
@@ -368,15 +513,32 @@
 
   <section class="hero" id="home">
     <div class="container">
-      <div class="hero-content">
-        <h1>Affordable Semiconductor & Automation Solutions</h1>
-        <p>
-          HS Automation deals in semiconductor components, industrial automation products,
-          drives, panels, wires, machinery parts and related electronic solutions with trusted service and competitive pricing.
-        </p>
-        <div class="btn-group">
-          <a href="#contact" class="btn btn-primary">Send Inquiry</a>
-          <a href="https://wa.me/918368896540" class="btn btn-secondary" target="_blank">WhatsApp Now</a>
+      <div class="hero-box">
+        <div class="hero-content">
+          <div class="hero-tag">Trusted Semiconductor & Automation Supplier</div>
+          <h1>Premium Industrial Solutions For Electronics & Automation Business</h1>
+          <p>
+            HS Automation deals in semiconductor electronics components, PLC, drives,
+            industrial machinery parts, panels, wires, connectors and custom requirements.
+            We focus on quality supply, fast response and long-term business support.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">Send Enquiry</a>
+            <a href="https://wa.me/918796031153" target="_blank" class="btn-secondary">WhatsApp Now</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80" alt="Industrial Automation">
+            <div class="hero-card-content">
+              <h3>Quality. Trust. Supply.</h3>
+              <p>
+                Strong B2B support for automation products, industrial parts and
+                semiconductor requirements with a premium business presentation.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -384,69 +546,25 @@
 
   <section id="about">
     <div class="container">
-      <h2 class="section-title">About HS Automation</h2>
-      <p class="section-subtitle">
-        We are a registered company serving customers with reliable semiconductor and automation products at highly affordable prices.
+      <div class="section-title">About Company</div>
+      <h2 class="section-heading">Why Buyers Choose HS Automation</h2>
+      <p class="section-text">
+        We work with traders, factories, machine builders and industrial buyers who need
+        dependable semiconductor and automation products at competitive pricing.
       </p>
 
       <div class="about-grid">
-        <div class="about-img">
-          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" alt="Industrial Automation">
-        </div>
-
-        <div class="about-text card">
-          <h3>Trusted Industrial Supply Partner</h3>
-          <p>
-            HS Automation has been working in the automation and electronics category for 3+ years,
-            helping clients source quality products from multiple brands.
-          </p>
-          <p>
-            We focus on strong customer support, practical solutions, and value pricing for businesses,
-            traders, factories and technical buyers.
-          </p>
-
-          <div class="stats">
-            <div class="stat-box">
-              <h4>3+</h4>
-              <p>Years Experience</p>
-            </div>
-            <div class="stat-box">
-              <h4>100+</h4>
-              <p>Products Support</p>
-            </div>
-            <div class="stat-box">
-              <h4>Fast</h4>
-              <p>Response</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">
-        We help customers with sourcing, supply, inquiry handling and industrial component support.
-      </p>
-
-      <div class="services-grid">
-        <div class="card">
+        <div class="info-card">
           <h3>Semiconductor Supply</h3>
-          <p>Bridge rectifiers, diodes, MOSFETs, transistors, ICs, relays, capacitors, resistors and other electronics components.</p>
+          <p>ICs, diodes, MOSFETs, bridge rectifiers, relays, capacitors, resistors and other electronics components.</p>
         </div>
-        <div class="card">
+        <div class="info-card">
           <h3>Automation Products</h3>
-          <p>Drives, panels, wires, control parts, industrial accessories and automation-related hardware solutions.</p>
+          <p>PLC, drives, HMIs, control panels, industrial wiring accessories and machine-related automation items.</p>
         </div>
-        <div class="card">
-          <h3>Bulk Order Support</h3>
-          <p>We handle quantity-based inquiries for B2B customers with practical pricing and responsive communication.</p>
-        </div>
-        <div class="card">
-          <h3>Client Assistance</h3>
-          <p>Our team supports clients with product details, quotation discussion, order requirements and regular follow-up.</p>
+        <div class="info-card">
+          <h3>Custom Requirement</h3>
+          <p>Share your BOM, photo or requirement and we will help you with sourcing and supply support.</p>
         </div>
       </div>
     </div>
@@ -454,117 +572,148 @@
 
   <section id="products">
     <div class="container">
-      <h2 class="section-title">Featured Products</h2>
-      <p class="section-subtitle">
-        A professional product showcase for semiconductor and automation categories.
+      <div class="section-title">Our Products</div>
+      <h2 class="section-heading">Main Product Categories</h2>
+      <p class="section-text">
+        You can keep these images for now, or later replace them with your own real stock photos.
       </p>
 
-      <div class="product-grid">
-        <div class="card product-card">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Semiconductor Components">
-          <div class="content">
-            <h3>Semiconductor Components</h3>
-            <p>High-demand electronics parts for industrial and commercial needs.</p>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Semiconductors">
+          <div class="product-content">
+            <h3>Semiconductors</h3>
+            <p>Diodes, ICs, MOSFETs, transistors, bridge rectifiers, MOVs, relays and other fast moving components.</p>
           </div>
         </div>
 
-        <div class="card product-card">
-          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1200&q=80" alt="Industrial Automation">
-          <div class="content">
-            <h3>Automation Equipment</h3>
-            <p>Reliable solutions for control systems, machine support and factory applications.</p>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" alt="PLC and Drives">
+          <div class="product-content">
+            <h3>PLC & Drives</h3>
+            <p>Industrial automation solutions including PLCs, VFD drives, control systems and panel accessories.</p>
           </div>
         </div>
 
-        <div class="card product-card">
-          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1200&q=80" alt="Electrical Panel Parts">
-          <div class="content">
-            <h3>Panels, Wires & Drives</h3>
-            <p>Complete industrial support products for electrical and automation use cases.</p>
-          </div>
-        </div>
-
-        <div class="card product-card">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Industrial Inquiry">
-          <div class="content">
-            <h3>B2B Order Inquiry</h3>
-            <p>Quick response for bulk requirements, repeat orders and client-specific supply needs.</p>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1200&q=80" alt="Industrial Parts">
+          <div class="product-content">
+            <h3>Industrial Parts</h3>
+            <p>Machinery spare parts, connectors, cables, panel items and custom industrial requirements for B2B buyers.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="why-us">
+  <section id="gallery">
     <div class="container">
-      <h2 class="section-title">Why Choose Us</h2>
-      <p class="section-subtitle">
-        HS Automation is built for professional dealing, affordable pricing and dependable customer support.
+      <div class="section-title">Photo Gallery</div>
+      <h2 class="section-heading">Replace These With Your Own Product Photos</h2>
+      <p class="section-text">
+        Abhi ke liye demo images lagi hain. Baad me inko apni real photos se change kar sakte ho.
       </p>
 
-      <div class="why-list">
-        <div class="why-item">
-          <h4>Affordable Rates</h4>
-          <p>Competitive prices across multiple brands and categories.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" alt="Product Image 1">
+          <p>Product Photo 1</p>
         </div>
-        <div class="why-item">
-          <h4>Professional Support</h4>
-          <p>Fast communication for client handling, quotation support and order discussion.</p>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22731d8a08?auto=format&fit=crop&w=900&q=80" alt="Product Image 2">
+          <p>Product Photo 2</p>
         </div>
-        <div class="why-item">
-          <h4>Product Knowledge</h4>
-          <p>Focused on technical understanding of semiconductor and automation products.</p>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Product Image 3">
+          <p>Product Photo 3</p>
         </div>
-        <div class="why-item">
-          <h4>B2B Friendly</h4>
-          <p>Suitable for traders, resellers, industrial buyers and business inquiries.</p>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=900&q=80" alt="Product Image 4">
+          <p>Product Photo 4</p>
         </div>
+      </div>
+
+      <div class="replace-note">
+        <strong>Photo change ka easy tareeka:</strong><br>
+        1. Apni photo ka naam rakho jaise <b>product1.jpg</b>, <b>product2.jpg</b><br>
+        2. In files ko <b>public_html</b> me upload karo<br>
+        3. Code me image link ko replace karo, example:<br><br>
+        <code>&lt;img src="product1.jpg" alt="Product 1"&gt;</code>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <p class="section-subtitle">
-        Send your inquiry now and our team will get back to you.
+      <div class="section-title">Contact Us</div>
+      <h2 class="section-heading">Send Your Requirement</h2>
+      <p class="section-text">
+        Aap WhatsApp, call ya form ke through direct enquiry bhej sakte ho.
       </p>
 
-      <div class="contact-grid">
-        <div class="card contact-info">
-          <h3>Business Details</h3>
-          <p><strong>Company:</strong> HS Automation</p>
-          <p><strong>Director:</strong> Abhishek</p>
-          <p><strong>Phone:</strong> +91 83688 96540</p>
-          <p><strong>Email:</strong> hsautomation6690@gmail.com</p>
-          <p><strong>GST No.:</strong> 09OXMPS5054R1ZZ</p>
-          <p><strong>Working Hours:</strong> 10:00 AM to 7:00 PM</p>
-          <p><strong>Location:</strong> Sector 16, nearest metro station Sector 3, F Block</p>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <h3>Contact / Order Form</h3>
+          <p>Fill this form and it will open directly on WhatsApp.</p>
+
+          <form onsubmit="sendToWhatsApp(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="company" placeholder="Company Name">
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select id="product">
+              <option value="Semiconductors">Semiconductors</option>
+              <option value="PLC & Drives">PLC & Drives</option>
+              <option value="Industrial Parts">Industrial Parts</option>
+              <option value="Custom Requirement">Custom Requirement</option>
+            </select>
+            <textarea id="message" placeholder="Write your requirement here" required></textarea>
+            <button type="submit">Send Enquiry</button>
+          </form>
         </div>
 
-        <div class="card">
-          <h3>Inquiry Form</h3>
-          <form action="mailto:hsautomation6690@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="tel" name="phone" placeholder="Your Phone Number" required />
-            <input type="email" name="email" placeholder="Your Email" />
-            <input type="text" name="product" placeholder="Product Requirement" required />
-            <textarea name="message" placeholder="Write your inquiry here..." required></textarea>
-            <button type="submit" class="btn btn-primary">Submit Inquiry</button>
-          </form>
+        <div class="details-card">
+          <h3>Company Details</h3>
+          <div class="contact-list">
+            <div><strong>Company:</strong> HS Automation</div>
+            <div><strong>Director:</strong> Abhishek</div>
+            <div><strong>Phone 1:</strong> 8796031153</div>
+            <div><strong>Phone 2:</strong> 8796021153</div>
+            <div><strong>Email:</strong> hsautomation6690@gmail.com</div>
+            <div><strong>GST No.:</strong> 09OXMPS5054R1ZZ</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 HS Automation. All Rights Reserved.</p>
-    </div>
-  </footer>
+  <div class="footer">
+    © 2026 HS Automation. All Rights Reserved.
+  </div>
 
-  <a class="whatsapp-float" href="https://wa.me/918368896540" target="_blank">WhatsApp</a>
+  <a class="float-btn whatsapp" href="https://wa.me/918796031153" target="_blank" title="WhatsApp">💬</a>
+  <a class="float-btn call" href="tel:8796031153" title="Call">📞</a>
+
+  <script>
+    function sendToWhatsApp(event){
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const company = document.getElementById('company').value;
+      const phone = document.getElementById('phone').value;
+      const product = document.getElementById('product').value;
+      const message = document.getElementById('message').value;
+
+      const text =
+        "New Enquiry from Website%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Company: " + company + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Product: " + product + "%0A" +
+        "Requirement: " + message;
+
+      window.open("https://wa.me/918796031153?text=" + text, "_blank");
+    }
+  </script>
 
 </body>
 </html>
-
